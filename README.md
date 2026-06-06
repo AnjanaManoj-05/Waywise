@@ -1,50 +1,217 @@
-# Welcome to your Expo app 👋
+# WayWise - Smart Travel Itinerary Planner
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📌 Overview
 
-## Get started
+**WayWise** is a mobile travel planning application designed to help travelers organize, manage, and optimize their trips efficiently. The app enables users to create personalized itineraries, explore destinations, view locations on maps, check weather conditions, and manage travel schedules from a single platform.
 
-1. Install dependencies
+WayWise aims to simplify travel planning by providing an intuitive and user-friendly experience for solo travelers and travel enthusiasts.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## ✨ Features
 
-   ```bash
-   npx expo start
-   ```
+### 🗺️ Trip Planning
 
-In the output, you'll find options to open the app in a
+* Create and manage travel itineraries
+* Add multiple destinations to a trip
+* Organize daily travel schedules
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 📍 Location Services
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* Google Maps integration
+* Destination search and exploration
+* Interactive map view
 
-## Get a fresh project
+### 🌤️ Weather Information
 
-When you're ready, run:
+* View weather conditions for destinations
+* Get real-time weather updates
 
-```bash
-npm run reset-project
+### 🔐 User Authentication
+
+* Secure user registration and login
+* JWT-based authentication
+* Protected user data
+
+### ❤️ Personalized Experience
+
+* Save favorite destinations
+* Manage personal travel plans
+* Customized itinerary recommendations
+
+### 📱 Modern Mobile UI
+
+* Clean and intuitive interface
+* Responsive design
+* Smooth navigation experience
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React Native
+* Expo Router
+* Zustand (State Management)
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+
+### APIs & Services
+
+* Google Maps API
+* Weather API
+* JWT Authentication
+
+---
+
+## 📂 Project Structure
+
+```text
+WayWise/
+│
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── assets/
+│   ├── store/
+│   └── services/
+│
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   └── config/
+│
+├── docs/
+│
+├── screenshots/
+│
+├── README.md
+└── package.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🚀 Installation
 
-To learn more about developing your project with Expo, look at the following resources:
+### Clone the Repository
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+git clone https://github.com/your-username/WayWise.git
+cd WayWise
+```
 
-## Join the community
+### Frontend Setup
 
-Join our community of developers creating universal apps.
+```bash
+cd frontend
+npm install
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the backend directory.
+
+```env
+PORT=5000
+
+MONGODB_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_secret_key
+
+GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+
+WEATHER_API_KEY=your_weather_api_key
+```
+
+---
+
+## 📸 Screenshots
+
+Add application screenshots inside the `screenshots` folder and update this section.
+
+```md
+| Home Screen | Destination Details |
+|-------------|--------------------|
+| Screenshot | Screenshot |
+
+| Itinerary Planner | Profile Screen |
+|------------------|---------------|
+| Screenshot | Screenshot |
+```
+
+---
+
+## 🏗️ System Architecture
+
+```text
+React Native App
+        │
+        ▼
+    Express API
+        │
+        ▼
+     MongoDB
+        │
+        ▼
+External APIs
+ ├─ Google Maps
+ └─ Weather Service
+```
+
+---
+
+## 🎯 Objectives
+
+* Simplify travel planning for users.
+* Provide a centralized platform for itinerary management.
+* Offer location and weather-based travel assistance.
+* Improve trip organization and user convenience.
+* Deliver a seamless mobile experience.
+
+---
+
+## 🔮 Future Enhancements
+
+* AI-based trip recommendations
+* Budget tracking
+* Hotel and flight booking integration
+* Offline itinerary access
+* Travel community features
+* Real-time trip collaboration
+* Expense management dashboard
+
+---
+
+**Project:** WayWise – Smart Travel Itinerary Planner
+
+Developed as part of an academic software engineering and mobile application development project.
+
+---
+
+
+## ⭐ Support
+
+If you find this project useful, consider giving it a star on GitHub.
+
+**Happy Traveling with WayWise! 🌍✈️**
