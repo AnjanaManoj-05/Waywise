@@ -146,22 +146,6 @@ WEATHER_API_KEY=your_weather_api_key
 
 ---
 
-## 📸 Screenshots
-
-Add application screenshots inside the `screenshots` folder and update this section.
-
-```md
-| Home Screen | Destination Details |
-|-------------|--------------------|
-| Screenshot | Screenshot |
-
-| Itinerary Planner | Profile Screen |
-|------------------|---------------|
-| Screenshot | Screenshot |
-```
-
----
-
 ## 🏗️ System Architecture
 
 ```text
